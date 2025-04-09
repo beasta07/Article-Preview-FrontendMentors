@@ -1,0 +1,187 @@
+body {
+  background-color: hwb(210 93% 3%);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+}
+.flexed-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.image {
+  width: 300px;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+h1, p {
+    margin: 0; /* Removes default spacing */
+  }
+h1 {
+  font-size: 20px;
+  font-family: 'Manrope', sans-serif;
+  color: sl(214, 17%, 51%);
+  font-weight: 700;
+}
+p {
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  margin-top: 20px;
+  font-weight: 500;
+}
+.author{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
+
+}
+.author-details{
+    display:flex;
+    align-items: center;
+}
+.author-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align name + date left */
+    gap: 4px; /* Space between name and date */
+    margin-left: 10px; /* Space from avatar */
+  }
+  
+.michelle{
+    border-radius:100%;
+    width: 40px;
+    height: 40px;
+}
+h1.author{
+  font-size:13px;
+  color: hsl(214, 17%, 51%);
+  margin-top: 15px;
+}
+p.date {
+    font-size: 10px;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(214, 17%, 51%);
+    margin: 0;
+  }
+.icon-share{
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 100% ;
+    padding:10px;
+}
+.share-container {
+    position: relative;
+  }
+  
+  .share-menu {
+    position: absolute;
+    bottom: 120%;
+    right: 0;
+    background-color: hsl(214, 17%, 51%);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  h4{
+    color: white;
+  }
+  
+  .share-menu img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .show-menu {
+    display: flex; /* Makes the menu visible */
+  }
+  
+  
+.footer{
+    text-align: center;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      width: 95%;
+    }
+  
+    .image {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+  
+    .flexed-items {
+      padding: 20px;
+    }
+  
+    .author {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .author-name {
+      align-items: flex-start;
+    }
+    .share-container {
+        position: relative;
+      }
+      
+      .share-menu {
+        position: absolute;
+        bottom: 120%;
+        right: 0;
+        background-color: hsl(214, 17%, 51%);
+        padding: 10px 15px;
+        border-radius: 8px;
+        display: flex;
+        gap: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+      }
+      
+      .share-menu img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+      
+      .hidden {
+        display: none;
+      }
+      .show-menu {
+        display: flex; /* Makes the menu visible */
+      }
+      
+  }
+  
